@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<script src="font-awesome/js/fontawesome-all.js"></script>
+		<script src="script/functions.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body onLoad="Start()">
+		<header class="wrapper site-header">
+			<a href="#"><img src="img/logo.png"></a>
+			<nav class="menu">
+				<ul class="nav-menu hideMenu" id="nav-menu">
+					<li class="mobile-block" id='nav-menu-text'><b>Navegue</b></li>
+					<li><a href="#">Página inicial</a></li>
+					<li><a href="#">Quem somos</a></li>
+					<li><a href="#">Imóveis para locação</a></li>
+					<li><a href="#">Imóveis à venda</a></li>
+					<li><a href="#">Entre em contato</a></li>
+				</ul>
+				<div class="group-drop-search">
+				<span class="dropdownmenu mobile-block" onClick="DropDownMenuCtrl()">&#9776;</span>
+					<form method="get" action="#" class="search-bar">
+						<span class="fas fa-search fa-sm search-icon"></span>
+						<input type="text" class="search-input" placeholder="Busca de imóveis">
+					</form>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="wrapper">
+			<section class="destaques">
+				<header>
+					<h1>Destaques à venda</h1>
+					<a href="#">Veja todos os imóveis à venda clicando aqui.</a>
+				</header>
+				<section class="slide-show">
+					<div class="slide-show-area" id="SlideDestaques">
+						<article class="ficha">
+							<figure>
+								<img src="img/ficha1.jpg">
+								<div>
+									<a href="#" class="ver-detalhes">Veja os detalhes</a>
+									<span class="fas fa-balance-scale fa-lg bt-redondo"></span>
+									<span class="far fa-heart fa-lg bt-redondo"></span>
+								</div>
+							</figure>
+							<h1>Residencial Altos da Alvorada</h1>
+							<p><span class="fas fa-building fa-sm"></span> Apartamento</p>
+							<p><span class="fas fa-tag fa-sm"></span> Venda</p>
+							<p><span class="fas fa-map-marker-alt fa-sm"></span> Canasvieiras, Florianópolis, SC</p>
+							<p><span class="fas fa-dollar-sign fa-sm"></span> R$ 280.000,00</p>
+						</article>
+
+						<article class="ficha">
+							<figure>
+								<img src="img/ficha2.jpg">
+								<div>
+									<a href="#" class="ver-detalhes">Veja os detalhes</a>
+									<span class="fas fa-balance-scale fa-lg bt-redondo"></span>
+									<span class="far fa-heart fa-lg bt-redondo"></span>
+								</div>
+							</figure>
+							<h1>Residencial 2</h1>
+							<p><span class="fas fa-building fa-sm"></span> Apartamento</p>
+							<p><span class="fas fa-tag fa-sm"></span> Venda</p>
+							<p><span class="fas fa-map-marker-alt fa-sm"></span> Florianópolis, SC</p>
+							<p><span class="fas fa-dollar-sign fa-sm"></span> R$ 250.000,00</p>
+						</article>
+
+						<article class="ficha">
+							<figure>
+								<img src="img/ficha3.jpg">
+								<div>
+									<a href="#" class="ver-detalhes">Veja os detalhes</a>
+									<span class="fas fa-balance-scale fa-lg bt-redondo"></span>
+									<span class="far fa-heart fa-lg bt-redondo"></span>
+								</div>
+							</figure>
+							<h1>Residencial Teste 3</h1>
+							<p><span class="fas fa-building fa-sm"></span> Apartamento</p>
+							<p><span class="fas fa-tag fa-sm"></span> Venda</p>
+							<p><span class="fas fa-map-marker-alt fa-sm"></span> Canasvieiras, Florianópolis, SC</p>
+							<p><span class="fas fa-dollar-sign fa-sm"></span> R$ 300.000,00</p>
+						</article>
+
+						<article class="ficha">
+							<figure>
+								<img src="img/ficha4.jpg">
+								<div>
+									<a href="#" class="ver-detalhes">Veja os detalhes</a>
+									<span class="fas fa-balance-scale fa-lg bt-redondo"></span>
+									<span class="far fa-heart fa-lg bt-redondo"></span>
+								</div>
+							</figure>
+							<h1>Teste de slide</h1>
+							<p><span class="fas fa-building fa-sm"></span> Apartamento</p>
+							<p><span class="fas fa-tag fa-sm"></span> Venda</p>
+							<p><span class="fas fa-map-marker-alt fa-sm"></span> Teste, Florianópolis, SC</p>
+							<p><span class="fas fa-dollar-sign fa-sm"></span> R$ 320.000,00</p>
+						</article>
+					</div>
+					<p class="bt-destaques-mobile" id="bt-destaques-mobile-1" onClick="CtrlDestaquesMobile('SlideDestaques')">Carregando...</p>
+				</section>
+				<span class="fas fa-arrow-left fa-lg bt-redondo ante" onClick="SlideBack('SlideDestaques')"></span>
+				<span class="fas fa-arrow-right fa-lg bt-redondo prox" onClick="SlideNext('SlideDestaques')"></span>
+			</section>
+
+			<section class="destaques">
+				<header>
+					<h1>Destaques de locação</h1>
+					<a href="#">Veja todos os imóveis para locação clicando aqui.</a>
+				</header>
+				<section class="slide-show">
+					<div class="slide-show-area" id="SlideDestaques2">
+						<article class="ficha">
+							<figure>
+								<img src="img/ficha5.jpg">
+								<div>
+									<a href="#" class="ver-detalhes">Veja os detalhes</a>
+									<span class="fas fa-balance-scale fa-lg bt-redondo"></span>
+									<span class="far fa-heart fa-lg bt-redondo"></span>
+								</div>
+							</figure>
+							<h1>Residencial Altos da Alvorada</h1>
+							<p><span class="fas fa-building fa-sm"></span> Apartamento</p>
+							<p><span class="fas fa-tag fa-sm"></span> Venda</p>
+							<p><span class="fas fa-map-marker-alt fa-sm"></span> Canasvieiras, Florianópolis, SC</p>
+							<p><span class="fas fa-dollar-sign fa-sm"></span> R$ 1.000,00</p>
+						</article>
+
+						<article class="ficha">
+							<figure>
+								<img src="img/ficha6.jpg">
+								<div>
+									<a href="#" class="ver-detalhes">Veja os detalhes</a>
+									<span class="fas fa-balance-scale fa-lg bt-redondo"></span>
+									<span class="far fa-heart fa-lg bt-redondo"></span>
+								</div>
+							</figure>
+							<h1>Residencial 2</h1>
+							<p><span class="fas fa-building fa-sm"></span> Apartamento</p>
+							<p><span class="fas fa-tag fa-sm"></span> Venda</p>
+							<p><span class="fas fa-map-marker-alt fa-sm"></span> Florianópolis, SC</p>
+							<p><span class="fas fa-dollar-sign fa-sm"></span> R$ 1.500,00</p>
+						</article>
+
+						<article class="ficha">
+							<figure>
+								<img src="img/ficha7.jpg">
+								<div>
+									<a href="#" class="ver-detalhes">Veja os detalhes</a>
+									<span class="fas fa-balance-scale fa-lg bt-redondo"></span>
+									<span class="far fa-heart fa-lg bt-redondo"></span>
+								</div>
+							</figure>
+							<h1>Residencial Teste 3</h1>
+							<p><span class="fas fa-building fa-sm"></span> Apartamento</p>
+							<p><span class="fas fa-tag fa-sm"></span> Venda</p>
+							<p><span class="fas fa-map-marker-alt fa-sm"></span> Canasvieiras, Florianópolis, SC</p>
+							<p><span class="fas fa-dollar-sign fa-sm"></span> R$ 700,00</p>
+						</article>
+
+						<article class="ficha">
+							<figure>
+								<img src="img/ficha8.jpg">
+								<div>
+									<a href="#" class="ver-detalhes">Veja os detalhes</a>
+									<span class="fas fa-balance-scale fa-lg bt-redondo"></span>
+									<span class="far fa-heart fa-lg bt-redondo"></span>
+								</div>
+							</figure>
+							<h1>Teste de slide</h1>
+							<p><span class="fas fa-building fa-sm"></span> Apartamento</p>
+							<p><span class="fas fa-tag fa-sm"></span> Venda</p>
+							<p><span class="fas fa-map-marker-alt fa-sm"></span> Teste, Florianópolis, SC</p>
+							<p><span class="fas fa-dollar-sign fa-sm"></span> R$ 800,00</p>
+						</article>
+					</div>
+					<p class="bt-destaques-mobile" id="bt-destaques-mobile-2" onClick="CtrlDestaquesMobile('SlideDestaques2')">Carregando...</p>
+				</section>
+				<span class="fas fa-arrow-left fa-lg bt-redondo ante" onClick="SlideBack('SlideDestaques2')"></span>
+				<span class="fas fa-arrow-right fa-lg bt-redondo prox" onClick="SlideNext('SlideDestaques2')"></span>
+			</section>
+
+			<aside class="ad">
+				<a href="#" class="ad1"><img src="img/ad1.png"></a>
+				<a href="#" class="ad2"><img src="img/ad2.png"></a>
+				<a href="#" class="ad3"><img src="img/ad3.png"></a>
+			</aside>
+		</div>
+
+		<footer class="wrapper site-footer">
+			<aside class="social">
+				<a href="#"><div class="bt-quadrado"><span href="#" class="fab fa-twitter fa-lg"></span></div></a>
+				<a href="#"><div class="bt-quadrado"><span href="#" class="fab fa-facebook-f fa-lg"></span></div></a>
+			</aside>
+			<hr>
+
+			<nav class="nav-footer">
+				<div class="nav-footer-block primeiro-f-block">
+					<h1>Navegue</h1>
+					<ul class="nav-menu-footer">
+						<li><a href="#">Página inicial</a></li>
+						<li><a href="#">Quem somos</a></li>
+						<li><a href="#">Imóveis para locação</a></li>
+						<li><a href="#">Imóveis à venda</a></li>
+						<li><a href="#">Entre em contato</a></li>
+					</ul>
+				</div>
+				<div class="nav-footer-block">
+					<h1>Horários</h1>
+					<p class="agencias"><strong>Agência Estreito</strong> - Seg a Sex Das 9h as 18h</p>
+					<p class="agencias"><strong>Agência Centro</strong> - Seg a Sex Das 9h as 18h</p>
+				</div>
+				<div class="nav-footer-block">
+					<div>
+						<p class="div-3-footer"><div class="item-quadrado"><span class="fas fa-map-marker-alt fa-lg"></span></div> <a href="#" class="div-3-footer-texto"><b>Veja a localização</b></p></a>
+						<p class="div-3-footer"><div class="item-quadrado"><span class="fas fa-phone fa-lg"></span></div> <a href="#" class="div-3-footer-texto"><b>Veja os telefones</b></p></a>
+						<p class="div-3-footer"><div class="item-quadrado"><span class="fas fa-mouse-pointer fa-lg"></span></div> <a href="#" class="div-3-footer-texto"><b>Formulário de contato</b></p></a>
+					</div>
+				</div>
+				<div class="nav-footer-block ultimo-f-block">
+					<div class="center-on-mobile"><a href="#"><img src="img/logo.png" class="logo-footer"></a></div>
+					<p class="copyright-block"><div class="item-redondo"><span class="fas fa-info-circle fa-lg"></span></div><b class="copyright">Copyright 2014</b></p>
+				</div>
+			</nav>
+		</footer>
+	</body>
+</html>
